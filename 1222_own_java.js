@@ -19,7 +19,6 @@ function c_popupActivate() {
             c_popup_elem[1].style.marginLeft = c_current_margin + 'px';}
         },8)
         i++;
-        console.log(i);
     }
 }
 
