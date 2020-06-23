@@ -1,1 +1,49 @@
+// SALE POPUP
 
+// Time variables
+var c_startDateTime = new Date("06-26-2020 00:00:01");
+var c_endDateTime = new Date("06-29-2020 23:59:59");
+var c_todayTime = new Date("06-27-2020 23:59:00");
+
+// Popup activation
+function c_popupActivate() {
+    var c_popup_elem = document.getElementsByClassName("c-popup")
+    var i = 0
+    var length = c_popup_elem.length
+    while(i < length){
+        c_current_margin = -200;
+        setInterval(function () {
+            if (c_current_margin != 10){
+            c_current_margin++;
+            c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
+            c_popup_elem[1].style.marginLeft = c_current_margin + 'px';}
+        },8)
+        i++;
+        console.log(i);
+    }
+}
+
+// Popup closure
+function c_popupHide() {
+    var c_popup_elem = document.getElementsByClassName("c-popup");
+    console.log("Popup Closed");
+        var c_current_margin = 10;
+        setInterval(
+        function(){
+            if (c_current_margin != -200) {
+                c_current_margin--;
+                c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
+                c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
+            }
+        },5)
+}
+
+setTimeout(c_popupActivate, 4000);
+
+// Popup timed activation
+//if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
+//  console.log("Samsung Popup Active.");
+//  setTimeout(c_popupActivate, 4000);
+//} else {
+//  console.log("Samsung Popup not active.");
+//};
