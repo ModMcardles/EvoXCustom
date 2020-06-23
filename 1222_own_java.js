@@ -38,12 +38,10 @@ function c_popupHide() {
         },5)
 }
 
-setTimeout(c_popupActivate, 4000);
-
 // Popup timed activation
-//if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
-//  console.log("Samsung Popup Active.");
-//  setTimeout(c_popupActivate, 4000);
-//} else {
-//  console.log("Samsung Popup not active.");
-//};
+if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
+  console.log("Samsung Popup Active.");
+  setTimeout(c_popupActivate, 4000);
+} else {
+  console.log("Samsung Popup not active.");
+};
