@@ -1,0 +1,38 @@
+.c-popup {
+  width: 200px;
+  height: 335px;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0px;
+  margin-left: -200px;
+  z-index: 100;
+}
+.c-popup-title {
+  font-size: 18px;
+}
+
+.c-Percentage-Off {
+  font-weight: 700;
+    font-size: 28px;
+}
+
+.c-shop-now-button {
+  margin: 10px auto !important;
+  padding: 5px 20px !important;
+  background-color: #000 !important;
+}
+
+.c-inner_main {
+  padding: 0px 15px 15px 15px;
+}
+
+.c-close-button {
+  width: 200px;
+  height: 25px;
+}
+
+.c-close-button svg{
+  cursor: pointer;
+}
