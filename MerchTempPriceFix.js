@@ -1,5 +1,5 @@
 if ($(location).attr('href') == 'https://www.mcardles.ie/'){
-    c_carousels = document.getElementsByClassName("merchandising-carousel");
+    c_carousels = document.getElementsByClassName("item-merchandising");
     var c_i2;
     for (c_i2 = 0; c_i2 < c_carousels.length; c_i2++) {
         c_carousels_price = c_carousels[c_i2].getElementsByClassName("price-label");
