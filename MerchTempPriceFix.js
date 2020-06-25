@@ -14,7 +14,6 @@ if (window.location.href == 'https://www.mcardles.ie/'){
     var c_i2;
     for (c_i2 = 0; c_i2 < c_static_merch.length; c_i2++) {
         c_static_prices = c_static_merch[c_i2].getElementsByClassName("merchandising-content-static-price");
-        console.log(c_static_prices);
         var c_i;
         for (c_i = 0; c_i < c_static_prices.length; c_i++) {
             c_static_price = c_static_prices[c_i].getAttribute("data-value");
