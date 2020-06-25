@@ -1,4 +1,4 @@
-if (window.location.href == 'https://www.mcardles.ie/'){
+if ($(location).attr('href') == 'https://www.mcardles.ie/'){
     c_carousels = document.getElementsByClassName("merchandising-carousel");
     var c_i2;
     for (c_i2 = 0; c_i2 < c_carousels.length; c_i2++) {
@@ -10,7 +10,7 @@ if (window.location.href == 'https://www.mcardles.ie/'){
         }
     }
 
-    c_static_merch = document.getElementsByClassName("merchandisingcontentstatic_container");
+    c_static_merch = document.getElementsByClassName("merchandising-content-static");
     var c_i2;
     for (c_i2 = 0; c_i2 < c_static_merch.length; c_i2++) {
         c_static_prices = c_static_merch[c_i2].getElementsByClassName("merchandising-content-static-price");
