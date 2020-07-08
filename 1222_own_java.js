@@ -1,5 +1,5 @@
 // SALE POPUP
-
+/*
 // Time variables
 var c_startDateTime = new Date("06-26-2020 00:00:01");
 var c_endDateTime = new Date("06-29-2020 23:59:59");
@@ -43,4 +43,4 @@ if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
   setTimeout(c_popupActivate, 4000);
 } else {
   console.log("Samsung Popup not active.");
-};
+}; */
