@@ -1,3 +1,4 @@
+if (window.location.href == 'https://www.mcardles.ie/'){
 // SALE POPUP
 // Time variables
 var c_startDateTime = new Date("07-13-2020 00:00:01");
@@ -50,3 +51,4 @@ if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
 } else {
   console.log("Popup not active.");
 };
+}
