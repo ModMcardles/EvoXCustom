@@ -14,8 +14,12 @@ function c_popupActivate() {
         setInterval(function () {
             if (c_current_margin != 10){
             c_current_margin++;
-            c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
-            c_popup_elem[1].style.marginLeft = c_current_margin + 'px';}
+            if($(window).width() >= 768){
+              c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
+            } else {
+              c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
+            }
+          }
         },8)
         i++;
     }
@@ -30,16 +34,19 @@ function c_popupHide() {
         function(){
             if (c_current_margin != -200) {
                 c_current_margin--;
-                c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
-                c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
+                if($(window).width() >= 768){
+                  c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
+                } else {
+                  c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
+                }
             }
         },5)
 }
 
 // Popup timed activation
 if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
-  console.log("Samsung Popup Active.");
+  console.log("Popup Active.");
   setTimeout(c_popupActivate, 4000);
 } else {
-  console.log("Samsung Popup not active.");
+  console.log("Popup not active.");
 };
