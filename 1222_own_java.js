@@ -14,7 +14,7 @@ function c_popupActivate() {
         setInterval(function () {
             if (c_current_margin != 10){
             c_current_margin++;
-            if($(window).width() >= 768){
+            if($(window).width() > 768){
               c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
             } else {
               c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
@@ -34,7 +34,7 @@ function c_popupHide() {
         function(){
             if (c_current_margin != -200) {
                 c_current_margin--;
-                if($(window).width() >= 768){
+                if($(window).width() > 768){
                   c_popup_elem[0].style.marginLeft = c_current_margin + 'px';
                 } else {
                   c_popup_elem[1].style.marginLeft = c_current_margin + 'px';
