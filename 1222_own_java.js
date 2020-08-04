@@ -2,7 +2,7 @@ if (window.location.href == 'https://www.mcardles.ie/'){
 // SALE POPUP
 // Time variables
 var c_startDateTime = new Date("07-13-2020 00:00:01");
-var c_endDateTime = new Date("07-26-2020 23:59:59");
+var c_endDateTime = new Date("08-07-2020 23:59:59");
 var c_todayTime = new Date();
 
 // Popup activation
