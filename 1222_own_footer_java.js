@@ -25,3 +25,12 @@ if (window.location.href == 'https://www.mcardles.ie/'){
         document.getElementById("AccountLoginCreate").innerHTML = '<a class="btn" href="' + Custom_Dash_Link + '">My Account</a>';
       }
 }
+
+// Crayola search results page poster
+if (getURLvar('query').toLowerCase() == "crayola") {
+    var parent = document.getElementById("htmlcontent_139480");
+    var img = document.createElement('img'); 
+    img.src = 'https://eu.evocdn.io/dealer/1222/content/media/My_Banners/CRAYOLASALEMOBILE.png';
+    img.width = 400
+    parent.appendChild(img);
+    }
