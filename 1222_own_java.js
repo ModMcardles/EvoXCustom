@@ -52,3 +52,12 @@ if (c_startDateTime < c_todayTime && c_todayTime < c_endDateTime) {
   console.log("Popup not active.");
 };
 }
+
+// Crayola search results page poster
+if (getURLvar('query').toLowerCase() == "crayola") {
+    var parent = document.getElementById("htmlcontent_139480");
+    var img = document.createElement('img'); 
+    img.src = 'https://eu.evocdn.io/dealer/1222/content/media/My_Banners/CRAYOLASALEMOBILE.png';
+    img.width = 400
+    parent.appendChild(img);
+    }
