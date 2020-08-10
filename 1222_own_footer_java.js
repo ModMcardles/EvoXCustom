@@ -27,18 +27,18 @@ if (window.location.href == 'https://www.mcardles.ie/'){
 }
 
 // Crayola search results page poster
-var pattern = /[?&]query=/;
-var URL = location.search;
-if(pattern.test(URL))
-{
-    if (getURLvar('query').toLowerCase() == "crayola") {
-    var parent = document.getElementById("htmlcontent_139480");
-    var img = document.createElement('img'); 
-    img.src = 'https://eu.evocdn.io/dealer/1222/content/media/My_Banners/CRAYOLASALEMOBILE.png';
-    img.width = 400
-    parent.appendChild(img);
-    }
-}
+//var pattern = /[?&]query=/;
+//var URL = location.search;
+//if(pattern.test(URL))
+//{
+//   if (getURLvar('query').toLowerCase() == "crayola") {
+//    var parent = document.getElementById("htmlcontent_139480");
+//    var img = document.createElement('img'); 
+//    img.src = 'https://eu.evocdn.io/dealer/1222/content/media/My_Banners/CRAYOLASALEMOBILE.png';
+//    img.width = 400
+//    parent.appendChild(img);
+//    }
+//}
 
 
 if (window.location.href == 'https://www.mcardles.ie/'){
